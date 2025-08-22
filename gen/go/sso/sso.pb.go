@@ -330,9 +330,9 @@ const file_sso_sso_proto_rawDesc = "" +
 	"\x0fIsAdminResponse\x12\x19\n" +
 	"\bis_admin\x18\x01 \x01(\bR\aisAdmin2\xab\x01\n" +
 	"\x04Auth\x129\n" +
-	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x16.auth.RegisterResponse\x120\n" +
-	"\x05Login\x12\x12.auth.LoginRequest\x1a\x13.auth.LoginResponse\x126\n" +
-	"\aIsAdmin\x12\x14.auth.IsAdminRequest\x1a\x15.auth.IsAdminResponseB\x16Z\x14space_1.sso.v1;ssov1b\x06proto3"
+	"\bRegister\x12\x15.authgrpc.RegisterRequest\x1a\x16.authgrpc.RegisterResponse\x120\n" +
+	"\x05Login\x12\x12.authgrpc.LoginRequest\x1a\x13.authgrpc.LoginResponse\x126\n" +
+	"\aIsAdmin\x12\x14.authgrpc.IsAdminRequest\x1a\x15.authgrpc.IsAdminResponseB\x16Z\x14space_1.sso.v1;ssov1b\x06proto3"
 
 var (
 	file_sso_sso_proto_rawDescOnce sync.Once
@@ -348,20 +348,20 @@ func file_sso_sso_proto_rawDescGZIP() []byte {
 
 var file_sso_sso_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_sso_sso_proto_goTypes = []any{
-	(*RegisterRequest)(nil),  // 0: auth.RegisterRequest
-	(*RegisterResponse)(nil), // 1: auth.RegisterResponse
-	(*LoginRequest)(nil),     // 2: auth.LoginRequest
-	(*LoginResponse)(nil),    // 3: auth.LoginResponse
-	(*IsAdminRequest)(nil),   // 4: auth.IsAdminRequest
-	(*IsAdminResponse)(nil),  // 5: auth.IsAdminResponse
+	(*RegisterRequest)(nil),  // 0: authgrpc.RegisterRequest
+	(*RegisterResponse)(nil), // 1: authgrpc.RegisterResponse
+	(*LoginRequest)(nil),     // 2: authgrpc.LoginRequest
+	(*LoginResponse)(nil),    // 3: authgrpc.LoginResponse
+	(*IsAdminRequest)(nil),   // 4: authgrpc.IsAdminRequest
+	(*IsAdminResponse)(nil),  // 5: authgrpc.IsAdminResponse
 }
 var file_sso_sso_proto_depIdxs = []int32{
-	0, // 0: auth.Auth.Register:input_type -> auth.RegisterRequest
-	2, // 1: auth.Auth.Login:input_type -> auth.LoginRequest
-	4, // 2: auth.Auth.IsAdmin:input_type -> auth.IsAdminRequest
-	1, // 3: auth.Auth.Register:output_type -> auth.RegisterResponse
-	3, // 4: auth.Auth.Login:output_type -> auth.LoginResponse
-	5, // 5: auth.Auth.IsAdmin:output_type -> auth.IsAdminResponse
+	0, // 0: authgrpc.Auth.Register:input_type -> authgrpc.RegisterRequest
+	2, // 1: authgrpc.Auth.Login:input_type -> authgrpc.LoginRequest
+	4, // 2: authgrpc.Auth.IsAdmin:input_type -> authgrpc.IsAdminRequest
+	1, // 3: authgrpc.Auth.Register:output_type -> authgrpc.RegisterResponse
+	3, // 4: authgrpc.Auth.Login:output_type -> authgrpc.LoginResponse
+	5, // 5: authgrpc.Auth.IsAdmin:output_type -> authgrpc.IsAdminResponse
 	3, // [3:6] is the sub-list for method output_type
 	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
