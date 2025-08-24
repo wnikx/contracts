@@ -30,7 +30,7 @@ option go_package = "space_1.sso.v1;ssov1";
  }
 
   message IsAdminRequest {
-   string user_id = 1;
+   int64 user_id = 1;
  }
 
   message IsAdminResponse {
