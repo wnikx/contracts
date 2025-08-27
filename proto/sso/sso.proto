@@ -2,29 +2,13 @@ syntax = "proto3";
 
 package auth;
 
-import "google/api/annotations.proto";
-
 option go_package = "space_1.sso.v1;ssov1";
 
-service Auth {
-  rpc Register (RegisterRequest) returns (RegisterResponse) {
-    option (google.api.http) = {
-      post: "/auth/register"
-      body: "*"
-    };
-  }
-  rpc Login (LoginRequest) returns (LoginResponse) {
-    option (google.api.http) = {
-      post: "/auth/login"
-      body: "*"
-    };
-  }
-  rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse) {
-    option (google.api.http) = {
-      get: "/auth/is-admin/{user_id}"
-    };
-  }
-}
+ service Auth {
+   rpc Register (RegisterRequest) returns (RegisterResponse);
+   rpc Login (LoginRequest) returns (LoginResponse);
+   rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
+ }
 
  message RegisterRequest {
    string email = 1;
